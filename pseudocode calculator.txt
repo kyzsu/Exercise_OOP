@@ -1,0 +1,28 @@
+Pseudocode OperasiBilanganAbsCetak
+-mendeklarasikan variabel a(double),b(double) dan OB(array).
+-Try: Input nilai pada variabel a dan b. Mengeksekusi fungsi cetakSemua dengan parameter OB,a,b.
+-Catch: Jika gagal, pesan error akan muncul.
+
+Pseudocode OperasiPenjumlahan
+-setA = a
+-setB = b
+-setC = a + b
+-tampil: a+" + "+b+" = "+c
+
+Pseudocode OperasiPengurangan
+-setA = a
+-setB = b
+-setC = a - b
+-tampil: a+" - "+b+" = "+c
+
+Pseudocode OperasiPerkalian
+-setA = a
+-setB = b
+-setC = a * b
+-tampil: a+" * "+b+" = "+c
+
+Pseudocode OperasiPembagian
+-setA = a
+-setB = b
+-setC = a / b
+-tampil: a+" / "+b+" = "+c
