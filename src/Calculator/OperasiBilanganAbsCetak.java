@@ -1,27 +1,35 @@
 package Calculator;
 
+import java.util.Scanner;
+
 final class OperasiBilanganAbsCetak {
 
     private void cetakSemua(OperasiBilanganAbs[] OB, double a, double b){
-        for(int i = 0; i < OB.length; i++){
-            OB[i].setA(a);
-            OB[i].setB(b);
-            OB[i].setC();
-            OB[i].tampil();
+        for (OperasiBilanganAbs operasiBilanganAbs : OB) {
+            operasiBilanganAbs.setA(a);
+            operasiBilanganAbs.setB(b);
+            operasiBilanganAbs.setC();
+            operasiBilanganAbs.tampil();
         }
     }
 
     public static void main(String[] args) {
-        final double a = 10.5, b = 2.5;
-
+        final double a,b;
         OperasiBilanganAbs[] OB = {
                 new OperasiPenjumlahan(),
                 new OperasiPengurangan(),
                 new OperasiPerkalian(),
                 new OperasiPembagian(),
         };
+        Scanner scanner = new Scanner(System.in);
 
-        OperasiBilanganAbsCetak ob = new OperasiBilanganAbsCetak();
-        ob.cetakSemua(OB,a,b);
+        try {
+            a = scanner.nextDouble();
+            b = scanner.nextDouble();
+            OperasiBilanganAbsCetak ob = new OperasiBilanganAbsCetak();
+            ob.cetakSemua(OB,a,b);
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 }
