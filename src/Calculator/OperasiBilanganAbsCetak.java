@@ -24,7 +24,9 @@ final class OperasiBilanganAbsCetak {
         Scanner scanner = new Scanner(System.in);
 
         try {
+            System.out.print("Masukan nilai a: ");
             a = scanner.nextDouble();
+            System.out.print("Masukkan nilai b: ");
             b = scanner.nextDouble();
             OperasiBilanganAbsCetak ob = new OperasiBilanganAbsCetak();
             ob.cetakSemua(OB,a,b);
